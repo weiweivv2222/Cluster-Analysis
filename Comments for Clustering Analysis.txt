@@ -1,0 +1,17 @@
+# Hierarchical Clustering Analysis
+It is one type of clustering analysis, which focus on data frame and matrix data set. The procedure for doing it is given by
+*To get the distance in your data set, there are many different "distance measure", such as "euclidean" (which is the default
+method in R), "maximum" and "manhattan".
+code: dis = dist(subdataFrame, method="euclidean")
+
+* After you have the distance between different data points, then we can divide the cluster for the data set.
+code: hclustering = hclust(dis, method="complete"), methods can be changed.
+
+* The last step is to plot the clustering tree using plot function
+code: plot(hclustering, lab.col=?)
+Notes: 
+1) the object is used in dist function should be numerical
+2) We can plot clustering tree with colors using "myplclust" function.
+3) If the clustering tree does not seems clearly seperate the data set, you can using the Singular Value Decomposition to 
+   find the most contributor variable in the dataFrame except the subdataFrame, then adding it to dist function. Doing the
+   same as before. Be aware of here the data frame include multiple variables, and we use hiearchical clustering only on some sub data. 
