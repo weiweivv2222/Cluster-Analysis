@@ -1,0 +1,11 @@
+The connection between PCA and Clustering analysis 
+* The correlation coefficient matrix, we can start to analysis the dependence between components
+* PCA on data frame (numerical): more convinece step to find the significant components
+* summary of the PCA results (pc). According to Cumulative proportion, we are able to make a descision which and how many
+  components are significant.
+*biplot(pc) to visulize the relation 
+* Then we can plot 3d graphics to investigate relations of components
+
+*K-Mean clustering analysis (from the PCA, we know how many centers we use for K-Mean clustering analysis)
+*hierarchical clustering
+*with(dataFrame, table(cluster, factorvariable) to finish the analysis.
