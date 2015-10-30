@@ -1,0 +1,9 @@
+# K-Mean clustering analysis
+It works on the same objects as hierarchical clustering analysis. The difference is we need to set the centers in the dataset
+before we implement it. Also everytime the start points is randomly, so it is better to set the seed for each time.
+code: set.seed(123)
+kClust = kmeans(dataFrame, centers=6, nstart=100)
+table(kClust$cluster, sub1$activity)
+
+Notes: 
+# We can plot center of the kClust in order to find which feature is most significant.
